@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "gravel-tools",
+	"version": "${version}",
+	"name": "Gravel Tools",
+	"description": "Gravel Tools by Ywoswho",
+	"authors": [
+		"Ywoswho"
+	],
+	"license": "MIT",
+	"icon": "assets/gravel-tools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.graveltools.GravelTools"
+		],
+		"fabric-datagen": [
+			"net.graveltools.GravelToolsDataGenerator"
+		],
+		"client": [
+			"net.graveltools.GravelToolsClient"
+		]
+	},
+	"mixins": [
+		"gravel-tools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
