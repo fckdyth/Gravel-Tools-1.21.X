@@ -51,11 +51,15 @@ public class ModItems {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
                 .register(itemGroup -> {
-                    itemGroup.add(GRAVEL_SWORD);
                     itemGroup.add(GRAVEL_SHOVEL);
                     itemGroup.add(GRAVEL_PICKAXE);
                     itemGroup.add(GRAVEL_AXE);
                     itemGroup.add(GRAVEL_HOE);
+                });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT)
+                .register(itemGroup -> {
+                    itemGroup.add(GRAVEL_SWORD);
                 });
     }
 }
